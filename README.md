@@ -21,8 +21,7 @@ This is all ran in PIos but is reproducible on any system that uses any modern v
 
 ### Visual diagram of how everything works:
 
-![[Assets/diagram.png]]
-
+![stackDiagram](https://github.com/Amirrori/rocketryPayload/blob/main/assets/diagram.png)
 
 ## Technical analysis:
 
