@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 # Why?
 
 It was a way to display core and miscellaneous information reliably.
@@ -156,4 +157,83 @@ https://docs.docker.com/get-started/docker-concepts/running-containers/sharing-l
 Two scripts:
 - Script that reads JSON files and imports them into a website.
 - Script that converts txt files with the bitstring packet into a JSON file and imports them into the website.
-Tell yani to change his bars to graphs.
+
+=======
+
+## NodeJS
+
+The sever runs on a *localhost* instance of NodeJS. It's set to run at port *3000*. This means that NodeJS is a dependency - on (Arch) Linux it can be installed as follows:
+```bash
+sudo pacman -S nodejs
+```
+
+To access it, you first need to start the server:
+```bash
+node <path-to-server-folder>/server.js
+```
+
+And to access it, it can be found at `http://localhost:3000/`
+
+### The contents of the file are as follows:
+Set up NodeJS to be used with Express (makes setting up endpoints easier):
+```js
+const express = require("express")
+const app = express()
+```
+
+Pull & serve files from the `src` folder:
+```js
+app.use(express.static("src"))
+```
+
+Turn I2C peripherals off via an endpoint call **(unused AND unfinished)**:
+```js
+const i2c = require("i2c-bus");
+const bus = i2c.openSync(1);
+const DEVICE_ADDR = 0x00;
+const DEVICE_REG = 0x00;
+const DEVICE_DATA = 0x00;
+
+app.post("/i2c/off", (req, res) => {
+    bus.writeByteSync(DEVICE_ADDR, DEVICE_REG, DEVICE_DATA);
+})
+```
+
+## HTML Architecture
+
+Each 'box' that contains data (e.g. *Camera Feed 1*, *Telemetry 1*, etc.) is a HTML `<section>` element with a unique ID tag to identify it. Every `<section>` also shares a `data-card` class for consistent styling.
+
+The `<section>` elements are encapsulated within a `<div>` with an id `telemetry-wrapper`, in case further parts are added to the payload in the future - that way the CSS can avoid clashing.
+
+## CSS Files
+
+There are currently 2 CSS files:
+- `reset.css`
+- `style.css`
+
+`reset.css` is CSS to remove the inconsistent styling between web browsers - the website I got the code from is linked at the top of the file.
+
+`style.css` is the CSS for the styling of the whole page. This is where updates should be made.
+
+## JS Files
+
+There are currently 3 JS files:
+- `gauge.js`
+- `script.js`
+- `server.js`
+
+`gauge.js` includes code for the gauges which display data. It may or may not be used in the future, I have chosen to not remove it despite it currently not being used. It should **NOT** be modified
+
+`server.js` is explained in the NodeJS section.
+
+`script.js` includes the JS code for everything else (e.g. updating data).
+
+## Updating Data
+
+Data can be updated by calling the following JavaScript function:
+```js
+function update_data(target, new_data);
+```
+
+Information on how the function works and what it expects is inside `script.js`.
+
