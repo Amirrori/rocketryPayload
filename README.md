@@ -1,7 +1,4 @@
-
-<<<<<<< HEAD
 # Why?
-
 It was a way to display core and miscellaneous information reliably.
 
 ## Code base
@@ -22,7 +19,8 @@ This is all ran in PIos but is reproducible on any system that uses any modern v
 
 ### Visual diagram of how everything works:
 
-![stackDiagram](https://github.com/Amirrori/rocketryPayload/blob/main/assets/diagram.png)
+![stackDiagram|144](https://github.com/Amirrori/rocketryPayload/blob/main/assets/diagram.png)
+
 
 ## Technical analysis:
 
@@ -125,41 +123,16 @@ Data is recieved in what is known as a packet. We decode the packet which is giv
 
 NodeJS reads the JSON files and dynamically changes the html of the web-server to display the data.
 
-## NodeJs Documentation:
+Slightly unrelated to webserver and website:
+After talking to james, there will be 2 forms of data stored. Very compact NEMA strings that are stored in a text file and a struct based packet that is directly copied from Will's dashboard webserver.
 
+#### string format
+The strings will be in the format of:
+"ID, TIME, SENSOR_IDS, SENSOR_DATAS"
 
-
-### Resources used:
-https://nginx.org/
-
-https://docs.docker.com/engine/install/debian/#installation-methods
-
-https://hub.docker.com/_/nginx
-
-https://www.geeksforgeeks.org/devops/running-commands-inside-docker-container/
-
-https://nodejs.org/en
-
-https://www.digitalocean.com/community/tutorials/how-to-secure-a-containerized-node-js-application-with-nginx-let-s-encrypt-and-docker-compose
-
-https://docs.docker.com/engine/network/
-
-https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/
-
-https://www.geeksforgeeks.org/node-js/how-to-read-and-write-json-file-using-node-js/
-
-https://docs.docker.com/get-started/docker-concepts/running-containers/sharing-local-files/
-
-
-
-# TODO: 
-
-Two scripts:
-- Script that reads JSON files and imports them into a website.
-- Script that converts txt files with the bitstring packet into a JSON file and imports them into the website.
-
-=======
-
+E.G: 
+"2, 17:38:42, B1, B2, B3, B4, T1, T2, T3, H1, H2, H3, M, A, X, Y, Z, Nb1, Nb2, Nb3, ..., Nx,y,z"
+	 | N is the data for each corresponding sensor. for instance Nb1 is data for sensor b1.
 ## NodeJS
 
 The sever runs on a *localhost* instance of NodeJS. It's set to run at port *3000*. This means that NodeJS is a dependency - on (Arch) Linux it can be installed as follows:
@@ -237,3 +210,24 @@ function update_data(target, new_data);
 
 Information on how the function works and what it expects is inside `script.js`.
 
+
+### Resources used:
+https://nginx.org/
+
+https://docs.docker.com/engine/install/debian/#installation-methods
+
+https://hub.docker.com/_/nginx
+
+https://www.geeksforgeeks.org/devops/running-commands-inside-docker-container/
+
+https://nodejs.org/en
+
+https://www.digitalocean.com/community/tutorials/how-to-secure-a-containerized-node-js-application-with-nginx-let-s-encrypt-and-docker-compose
+
+https://docs.docker.com/engine/network/
+
+https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/
+
+https://www.geeksforgeeks.org/node-js/how-to-read-and-write-json-file-using-node-js/
+
+https://docs.docker.com/get-started/docker-concepts/running-containers/sharing-local-files/
