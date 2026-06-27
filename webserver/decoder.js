@@ -9,7 +9,7 @@ const fs = require('node:fs');
 const file_name = "/home/shrewd/Desktop/rocketryPayload/webserver/lora.txt"
 
 let string = ""; 
-function initilisation(FILE) {
+function initilisation(FILE, iteration) {
     
     try {
         const data = fs.readFileSync(FILE, "utf8");
@@ -30,6 +30,8 @@ function initilisation(FILE) {
         parsedData.push(parseData(stringWOS));
     }
     console.log(parsedData);
+    
+    fs.writeFileSync('data.json',JSON.stringify(parsedData, null, 2), 'utf8');
     fs.writeFileSync('data.json',JSON.stringify(parsedData, null, 2), 'utf8');
 }
 
