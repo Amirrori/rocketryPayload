@@ -88,6 +88,13 @@ section.data-card {
 
     overflow: hidden;
 }
+section.data-card .sensor-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 section.data-card h2 {
     font-size: var(--font-lg);
     margin-bottom: 15px;
@@ -177,6 +184,17 @@ section.data-card img.cortisol {
 }
 .data-point {
     display: inline-block;
+    border: 1px solid var(--card-border);
+    border-radius: 7px;
+    width: 23%;
+    padding: 7px 15px;
+
+    position: relative;
+}
+.data-point .units {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 

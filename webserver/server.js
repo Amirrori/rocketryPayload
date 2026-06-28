@@ -1,25 +1,36 @@
+// MAKE SURE THIS IS CORRECT FOR THE LAUNCH
+const file_name = "/home/yani/rocketry/rocketryPayload/webserver/lora.txt";
+
 const express = require("express")
-const app = express()
-const i2c = require("i2c-bus");
+const app = express();
+// const i2c = require("i2c-bus");
 
 const fs = require('node:fs');
 
-const file_name = "/home/shrewd/Desktop/rocketryPayload/webserver/lora.txt"
-const bus = i2c.openSync(1);
+// const bus = i2c.openSync(1);
 const DEVICE_ADDR = 0x00;
 const DEVICE_REG = 0x00;
 const DEVICE_DATA = 0x00;
+const FILE_ACCESS_INTERVAL = 1000;
+const PORT = 3000;
 
-app.use(express.static("src"))
+app.use(express.static("src"));
 
-app.post("/i2c/off", (req, res) => {
-    bus.writeByteSync(DEVICE_ADDR, DEVICE_REG, DEVICE_DATA);
-    res.send("disabled I2C");
-})
+// app.post("/i2c/off", (req, res) => {
+//     bus.writeByteSync(DEVICE_ADDR, DEVICE_REG, DEVICE_DATA);
+//     res.send("disabled I2C");
+// })
 
-app.listen(3000, () => {
-    console.log("Server is Running")
-})
+app.listen(PORT, () => {
+    console.log("Server is Running");
+});
+
+app.get("/data/data.json", (req, res) => {
+    const data = fs.readFileSync("data.json", "utf8");
+
+    res.type("application/json");
+    res.send(data);
+});
 
 
 let string = ""; 
@@ -73,10 +84,11 @@ function parseData(string) {
 }
 
 initilisation(file_name)
-fs.watchFile(file_name, { interval: 500 }, (curr, prev) => {
+fs.watchFile(file_name, { interval: FILE_ACCESS_INTERVAL }, (curr, prev) => {
     if (curr.mtimeMs !== prev.mtimeMs) {
         console.log('File was modified');
         initilisation(file_name);
     }
 });
+
 
