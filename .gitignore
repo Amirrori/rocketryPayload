@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.env/
+env/
+.venv/
+node_modules/
+npm-debug.log*
+.DS_Store
+.cache/
+.docker/
+*.pem
+*.key
+id_rsa
+id_ed25519
