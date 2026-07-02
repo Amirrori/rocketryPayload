@@ -195,11 +195,11 @@ function buildDashboardSnapshot() {
     .latest { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-bottom: 28px; }
     .latest div { border: 1px solid #303947; border-radius: 7px; padding: 10px; background: #171b22; }
     .latest strong, .latest span { display: block; }
-    .latest strong { color: #75d0c6; font-size: 12px; }
+    .latest strong { color: #c084fc; font-size: 12px; }
     .latest span { font-size: 18px; margin-top: 4px; }
     table { width: 100%; border-collapse: collapse; background: #171b22; }
     th, td { border-bottom: 1px solid #303947; padding: 9px 10px; text-align: left; }
-    th { color: #75d0c6; font-size: 12px; text-transform: uppercase; }
+    th { color: #c084fc; font-size: 12px; text-transform: uppercase; }
   </style>
 </head>
 <body>

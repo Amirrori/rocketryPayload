@@ -68,6 +68,35 @@ const lastUpdate = document.querySelector("#last-update");
 const rowCount = document.querySelector("#row-count");
 const latestNode = document.querySelector("#latest-node");
 const sampleTime = document.querySelector("#sample-time");
+const themeToggle = document.querySelector("#theme-toggle");
+
+const THEME_STORAGE_KEY = "payload-dashboard-theme";
+
+function preferredTheme() {
+    const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+
+    if (savedTheme === "light" || savedTheme === "dark") {
+        return savedTheme;
+    }
+
+    return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+}
+
+function applyTheme(theme) {
+    document.documentElement.dataset.theme = theme;
+
+    if (themeToggle) {
+        themeToggle.textContent = theme === "light" ? "Dark Mode" : "Light Mode";
+        themeToggle.setAttribute("aria-pressed", theme === "light" ? "true" : "false");
+    }
+}
+
+function toggleTheme() {
+    const nextTheme = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+
+    localStorage.setItem(THEME_STORAGE_KEY, nextTheme);
+    applyTheme(nextTheme);
+}
 
 function setStatus(label, state) {
     connectionStatus.textContent = label;
@@ -203,5 +232,7 @@ async function updateDashboard() {
     }
 }
 
+applyTheme(preferredTheme());
+themeToggle?.addEventListener("click", toggleTheme);
 updateDashboard();
 setInterval(updateDashboard, POLL_INTERVAL_MS);
