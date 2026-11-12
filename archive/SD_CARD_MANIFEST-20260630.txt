@@ -1,0 +1,74 @@
+﻿2026-06-30T13:26:17+01:00
+Linux uhrkpay 6.18.29+rpt-rpi-v8 #1 SMP PREEMPT Debian 1:6.18.29-1+rpt1 (2026-05-12) aarch64 GNU/Linux
+Filesystem      Size  Used Avail Use% Mounted on
+udev            318M     0  318M   0% /dev
+tmpfs           182M  3.9M  178M   3% /run
+/dev/mmcblk0p2   29G  5.1G   22G  19% /
+tmpfs           453M     0  453M   0% /dev/shm
+tmpfs           5.0M   12K  5.0M   1% /run/lock
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           453M     0  453M   0% /tmp
+/dev/mmcblk0p1  505M   66M  439M  14% /boot/firmware
+tmpfs           1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs            91M  8.0K   91M   1% /run/user/1000
+   305579      4 -rw-rw-r--   1 uhrkpay  uhrkpay        69 May 22 13:02 /home/uhrkpay/env/.gitignore
+   306537      4 -rwxrwxr-x   1 uhrkpay  uhrkpay       234 May 22 13:02 /home/uhrkpay/env/bin/pip
+   306538      4 -rwxrwxr-x   1 uhrkpay  uhrkpay       234 May 22 13:02 /home/uhrkpay/env/bin/pip3
+   307193      8 -rwxrwxr-x   1 uhrkpay  uhrkpay      5587 May 22 13:09 /home/uhrkpay/env/bin/i2cscan.py
+   306539      4 -rwxrwxr-x   1 uhrkpay  uhrkpay       234 May 22 13:02 /home/uhrkpay/env/bin/pip3.13
+   306543      4 -rw-r--r--   1 uhrkpay  uhrkpay      2142 May 22 13:02 /home/uhrkpay/env/bin/activate
+   306544      4 -rw-r--r--   1 uhrkpay  uhrkpay      2175 May 22 13:02 /home/uhrkpay/env/bin/activate.fish
+   305586      4 -rw-r--r--   1 uhrkpay  uhrkpay       904 May 22 13:02 /home/uhrkpay/env/bin/activate.csh
+   307191      8 -rwxrwxr-x   1 uhrkpay  uhrkpay      8187 May 22 13:09 /home/uhrkpay/env/bin/ftconf.py
+   307015      4 -rwxrwxr-x   1 uhrkpay  uhrkpay       233 May 22 13:09 /home/uhrkpay/env/bin/pyserial-miniterm
+   306545     12 -rw-r--r--   1 uhrkpay  uhrkpay      9031 May  5 22:05 /home/uhrkpay/env/bin/Activate.ps1
+   307199     20 -rw-rw-r--   1 uhrkpay  uhrkpay     17483 May 22 13:09 /home/uhrkpay/env/bin/__pycache__/pyterm.cpython-313.pyc
+   307196     12 -rw-rw-r--   1 uhrkpay  uhrkpay     10309 May 22 13:09 /home/uhrkpay/env/bin/__pycache__/ftconf.cpython-313.pyc
+   307197      4 -rw-rw-r--   1 uhrkpay  uhrkpay      3579 May 22 13:09 /home/uhrkpay/env/bin/__pycache__/ftdi_urls.cpython-313.pyc
+   307198      8 -rw-rw-r--   1 uhrkpay  uhrkpay      7465 May 22 13:09 /home/uhrkpay/env/bin/__pycache__/i2cscan.cpython-313.pyc
+   307192      4 -rwxrwxr-x   1 uhrkpay  uhrkpay      2724 May 22 13:09 /home/uhrkpay/env/bin/ftdi_urls.py
+   307194     16 -rwxrwxr-x   1 uhrkpay  uhrkpay     14259 May 22 13:09 /home/uhrkpay/env/bin/pyterm.py
+   307016      4 -rwxrwxr-x   1 uhrkpay  uhrkpay       235 May 22 13:09 /home/uhrkpay/env/bin/pyserial-ports
+   305580      4 -rw-rw-r--   1 uhrkpay  uhrkpay       178 May 22 13:02 /home/uhrkpay/env/pyvenv.cfg
+   308445      4 -rwxr-xr-x   1 uhrkpay  uhrkpay       914 Jun 23 01:00 /home/uhrkpay/env/PayloadTestCode.py
+      773     16 -rw-------   1 uhrkpay  uhrkpay     13606 Jun 30 10:43 /home/uhrkpay/.bash_history
+   308440      0 -rw-rw-r--   1 uhrkpay  uhrkpay         0 Jun 18 11:46 /home/uhrkpay/.cache/jedi/PARSO-CACHE-LOCK
+   308444      8 -rw-rw-r--   1 uhrkpay  uhrkpay      7651 May 22 13:58 /home/uhrkpay/.cache/jedi/CPython-313-33/4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-bf14e9f067d7742b30c15a320478bee225db145771f2f114affeb490e9e45850.pkl
+   308442    348 -rw-rw-r--   1 uhrkpay  uhrkpay    354668 May 22 13:58 /home/uhrkpay/.cache/jedi/CPython-313-33/4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-51d9be3bf1562830cd8e83ca038382518fd8fa2d9e83c38ed57b6cd1b24f2715.pkl
+   308441   1072 -rw-rw-r--   1 uhrkpay  uhrkpay   1097168 May 22 13:58 /home/uhrkpay/.cache/jedi/CPython-313-33/4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-576bf6a5da7dbcd7aa096d638e3a1f69cd1ed315716d9fe3a507fee9c132f0a6.pkl
+   308443     44 -rw-rw-r--   1 uhrkpay  uhrkpay     42663 May 22 13:58 /home/uhrkpay/.cache/jedi/CPython-313-33/4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-f2e77c6f5a5f776dd1b5cd3f133fa77c21d5e4c62ddf0e23a91a887c9c3d5565.pkl
+   306561     88 -rw-rw-r--   1 uhrkpay  uhrkpay     86318 Jun 18 12:43 /home/uhrkpay/.cache/jedi/CPython-313-33/4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-3e5cb4ea74356a3e9f687d109d52d68642bd28e52351fbfede3d0f5cfde63014.pkl
+   310078    112 -rw-rw-r--   1 uhrkpay  uhrkpay    112165 Jun 18 12:43 /home/uhrkpay/.cache/jedi/CPython-313-33/4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-890c5776b68c5ecfc3e6455c18b0d352dc6b0ec7e7ca32888adac74d51f27bd2.pkl
+   308439    864 -rw-rw-r--   1 uhrkpay  uhrkpay    884351 May 22 13:54 /home/uhrkpay/.cache/jedi/CPython-313-33/4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-1d207eb4500edbeeca7a428579c8cd925612907a648d37f82c38d5de11f6bce5.pkl
+   310079    148 -rw-rw-r--   1 uhrkpay  uhrkpay    147998 Jun 18 12:43 /home/uhrkpay/.cache/jedi/CPython-313-33/4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-f9001793a83ff76c9485f2a89019c122a844c323089565cae72e275ec812e744.pkl
+   310072      8 -rw-rw-r--   1 uhrkpay  uhrkpay      4250 Jun 18 11:46 /home/uhrkpay/.cache/jedi/CPython-313-33/4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-73db84806328f690928d11fd8f232eed6c597b6a041a517e8ef706ae619a418e.pkl
+      759      4 -rw-------   1 uhrkpay  uhrkpay        20 May  6 16:41 /home/uhrkpay/.lesshst
+    32378     16 -rw-------   1 uhrkpay  uhrkpay     15561 May 11 16:26 /home/uhrkpay/.viminfo
+    32355     24 -rw-rw-r--   1 uhrkpay  uhrkpay     22446 May 11 15:13 /home/uhrkpay/get-docker.sh
+   275078      0 -rw-------   1 uhrkpay  uhrkpay         0 May 26 14:49 /home/uhrkpay/.docker/.token_seed.lock
+   268521      0 -rw-------   1 uhrkpay  uhrkpay         0 May 11 16:11 /home/uhrkpay/.docker/buildx/.lock
+   262145      4 -rw-------   1 uhrkpay  uhrkpay        16 May 26 14:49 /home/uhrkpay/.docker/buildx/.buildNodeID
+   262146      4 -rw-------   1 uhrkpay  uhrkpay        20 May 26 14:49 /home/uhrkpay/.docker/buildx/activity/default
+   275079      4 -rw-------   1 uhrkpay  uhrkpay        74 May 26 14:49 /home/uhrkpay/.docker/.token_seed
+   266247      4 -rw-rw-r--   1 uhrkpay  uhrkpay       104 May 26 14:47 /home/uhrkpay/docker/Dockerfile
+   308450      4 -rw-rw-r--   1 uhrkpay  uhrkpay       114 May 26 14:47 /home/uhrkpay/docker/nginx/default.conf
+   308448      4 -rw-rw-r--   1 uhrkpay  uhrkpay       203 May 26 14:47 /home/uhrkpay/docker/webserver/Dockerfile
+   268507      4 -rw-r--r--   1 uhrkpay  uhrkpay       316 May 26 14:47 /home/uhrkpay/docker/webserver/package.json
+   272088      4 -rw-r--r--   1 uhrkpay  uhrkpay       425 May 26 14:47 /home/uhrkpay/docker/webserver/server.js
+   268515      4 -rw-r--r--   1 uhrkpay  uhrkpay      2628 May 26 14:47 /home/uhrkpay/docker/webserver/src/style.css
+   268512      4 -rw-r--r--   1 uhrkpay  uhrkpay       921 May 26 14:47 /home/uhrkpay/docker/webserver/src/reset.css
+   268510      8 -rw-r--r--   1 uhrkpay  uhrkpay      5091 May 26 14:47 /home/uhrkpay/docker/webserver/src/index.html
+   268509     16 -rw-r--r--   1 uhrkpay  uhrkpay     13125 May 26 14:47 /home/uhrkpay/docker/webserver/src/tmp.css
+   408988      4 -rw-rw-r--   1 uhrkpay  uhrkpay        69 Jun 18 11:25 /home/uhrkpay/.env/.gitignore
+   408989      4 -rw-rw-r--   1 uhrkpay  uhrkpay       157 Jun 18 11:25 /home/uhrkpay/.env/pyvenv.cfg
+   262751      0 -rw-rw-r--   1 uhrkpay  uhrkpay         0 Jun 23 00:54 /home/uhrkpay/.config/Thonny/frontend_faults.log
+   262750     16 -rw-rw-r--   1 uhrkpay  uhrkpay     12491 Jun 23 01:00 /home/uhrkpay/.config/Thonny/backend.log
+   131164      4 -rw-r--r--   1 uhrkpay  uhrkpay        88 Apr 21 01:13 /home/uhrkpay/.config/labwc/environment
+    32670      0 -rw-r--r--   1 uhrkpay  uhrkpay         0 May  6 16:18 /home/uhrkpay/.sudo_as_admin_successful
+     1681      4 -rw-r--r--   1 uhrkpay  uhrkpay       807 Apr 21 01:06 /home/uhrkpay/.profile
+     1680      4 -rw-r--r--   1 uhrkpay  uhrkpay      3523 Apr 21 01:06 /home/uhrkpay/.bashrc
+     1679      4 -rw-r--r--   1 uhrkpay  uhrkpay       220 Apr 21 01:06 /home/uhrkpay/.bash_logout
+-rwxr-xr-x 1 root root  108 Jun 18 11:34 /boot/firmware/cmdline.txt
+-rwxr-xr-x 1 root root 1259 Jun 23 00:39 /boot/firmware/config.txt
+-rwxr-xr-x 1 root root  317 May  6 17:02 /boot/firmware/network-config
+-rwxr-xr-x 1 root root  579 May  6 17:02 /boot/firmware/user-data

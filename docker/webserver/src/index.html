@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>UHRocketry Payload Dashboard</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="top-bar">
+            <div class="brand-lockup">
+                <img src="public/uhrk_logo.webp" alt="UH Rocketry logo">
+                <div>
+                    <p>Mach 26</p>
+                    <h1>Payload Dashboard</h1>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <button id="theme-toggle" class="download-button theme-toggle" type="button" aria-pressed="false">Light Mode</button>
+                <span id="connection-status" class="status-pill status-waiting">Waiting</span>
+                <a class="download-button" href="/download/dashboard.html" download>Download HTML</a>
+            </div>
+        </header>
+
+        <main id="content-wrapper">
+            <section class="summary-strip" aria-label="Payload summary">
+                <div>
+                    <span class="metric-label">Last Update</span>
+                    <strong id="last-update">-</strong>
+                </div>
+                <div>
+                    <span class="metric-label">Rows Logged</span>
+                    <strong id="row-count">0</strong>
+                </div>
+                <div>
+                    <span class="metric-label">Latest Node</span>
+                    <strong id="latest-node">-</strong>
+                </div>
+                <div>
+                    <span class="metric-label">Sample Time</span>
+                    <strong id="sample-time">-</strong>
+                </div>
+            </section>
+
+            <section class="panel latest-panel" aria-labelledby="latest-heading">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">Live</span>
+                        <h2 id="latest-heading">Most Recent</h2>
+                    </div>
+                </div>
+                <div id="latest-grid" class="latest-grid empty-state">
+                    <span>No telemetry received</span>
+                </div>
+            </section>
+
+            <section class="panel history-panel" aria-labelledby="history-heading">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">Archive</span>
+                        <h2 id="history-heading">Past Data</h2>
+                    </div>
+                </div>
+
+                <div class="table-frame">
+                    <table>
+                        <thead>
+                            <tr id="history-head"></tr>
+                        </thead>
+                        <tbody id="history-body">
+                            <tr>
+                                <td>No telemetry received</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <script src="app.js"></script>
+    </body>
+</html>
