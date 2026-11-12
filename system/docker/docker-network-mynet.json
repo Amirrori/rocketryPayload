@@ -1,0 +1,56 @@
+[
+    {
+        "Name": "mynet",
+        "Id": "ec55234ecc44f5985eded17a69eec9305b7ea2e4ccee6f9f7fe3422b5cf148bb",
+        "Created": "2026-05-11T15:16:37.902528084+01:00",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "172.18.0.0/16",
+                    "Gateway": "172.18.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Options": {},
+        "Labels": {},
+        "Containers": {
+            "01da5e09c14c91a0ab30d904800ab30675c57ca3fc60cf792e5f2a94f9801a15": {
+                "Name": "webserver-nginx",
+                "EndpointID": "3f6323ddf0684224bb9ada6f3f20528476df7ac8b2d574cbb03b6caac54e6dd7",
+                "MacAddress": "a2:fa:d4:f5:66:fe",
+                "IPv4Address": "172.18.0.2/16",
+                "IPv6Address": ""
+            },
+            "5fb95d210c5c3c4ac744fc200a352d11d28d41521c1ace54d1728f1f8690c202": {
+                "Name": "node-server",
+                "EndpointID": "77f3f4f3200572cb7caa8005d47dd3d96915dc5197cffc8ec0fa1503891135ba",
+                "MacAddress": "e2:f5:6d:1d:3f:08",
+                "IPv4Address": "172.18.0.3/16",
+                "IPv6Address": ""
+            }
+        },
+        "Status": {
+            "IPAM": {
+                "Subnets": {
+                    "172.18.0.0/16": {
+                        "IPsInUse": 5,
+                        "DynamicIPsAvailable": 65531
+                    }
+                }
+            }
+        }
+    }
+]

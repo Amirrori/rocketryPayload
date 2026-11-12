@@ -1,0 +1,715 @@
+ping google.com
+sudo apt install python3
+sudo apt install smbus2
+sudo pip install smbus2
+sudo pip3 install smbus2
+pip3 install smbus2
+pip install smbus2
+sudo apt install python3-smbus2
+sudo pip install --upgreade pip
+sudo pip3 install --upgreade pip
+sudo apt install --upgreade pip
+python -m ensurepip --upgrade
+apt install python3-smbus2
+sudo apt install python3-smbus2
+sudo raspi-config
+sudo reboot
+sudo i2cdetect -y 1
+sudo apt install i2cdetect
+sudo apt-get install i2c-tools
+sudo i2cdetect -y 1
+sudo raspi-config nonint get_i2c
+sudo raspi-config nonint get_i2c 1
+sudo i2cdetect -y 1
+sudo raspi-config nonint get_i2c
+sudo raspi-config nonint do_i2c 1
+sudo i2cdetect -y 1
+sudo raspi-config nonint do_i2c 0
+sudo i2cdetect -y 1
+sudo pip install RPI.BME280
+sudo apt install RPI.BME280
+sudo apt install python3-RPI.BME280
+sudo apt install python-RPI.BME280
+apt search RPI.BME280
+apt search BME280
+sudo apt install python3-BME280
+sudo apt install python3-bme280
+sudo i2cdetect -y 1
+apt searh jedi
+apt search jedi
+sudo apt install python3-jedi
+sudo shutdown now
+nmcli device
+sudo nmcli device hotspot ssid uhrkpay password uhrk1234
+ls
+cd
+cc
+ssh uhrkpay@192.168.137.103
+sudo shutdown -h now
+nmcli device
+sudo nmcli device hotspot ssid uhrkpay password uhrk1234 ifname wlan0
+--help
+sudo raspi-config
+sudo shutdown -h now
+nmcli device
+sudo nmcli device hotspot ssid uhrkpay password uhrk1234 ifname wlan0
+cd
+cs
+ls
+cd
+ssh shutdown -h now
+sudo shutdown -h now
+ls
+ls /
+exit
+ssh uhrkpay@pi-hotspot.local
+nmcli device
+sudo nmcli device wifi hotspot ssid uhrkpay password uhrk1234 ifname wlan0
+clear
+sudo apt install docker
+docker
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+docker
+sudo docker network create mynet
+mkdir Docker
+cd Docker/
+vim
+nano
+sudo apt install vim
+vim 
+vim Dockerfile
+mkdir nginx
+cd nginx
+vim default.conf
+cd ..
+mkdir webserver
+cd webserver/
+vim Dockerfile
+:exit
+exit
+nmcli connection 
+nmcli connection show d0a975b8-4bef-4c5a-beaa-754dd4db99f0
+nmcli connection modify d0a975b8-4bef-4c5a-beaa-754dd4db99f0 connection.autoconnect yes connection.autoconnect-priority 100 
+sudo nmcli connection modify d0a975b8-4bef-4c5a-beaa-754dd4db99f0 connection.autoconnect yes connection.autoconnect-priority 100 
+nmcli connection show d0a975b8-4bef-4c5a-beaa-754dd4db99f0
+nmcli
+nmcli dev wifi
+nmcli dev show
+nmcli dev wifi rescan
+sudo nmcli dev wifi rescan
+nmcli dev wifi
+nmcli dev wifi connect Laptop -a 
+sudo nmcli dev wifi connect Laptop -a 
+cd Docker/
+ls
+cd webserver/
+vim package.json
+vim server.js
+mkdir public
+cd public/
+vim index.html
+ls
+exit
+ping google.com
+ping 1.1.1.1
+docker
+ping google.com
+sudo shutdown -h now
+exit
+nmcli dev wifi connect Laptop -a 
+sudo nmcli dev wifi rescan
+nmcli dev wifi connect Laptop -a 
+sudo nmcli dev wifi connect Laptop -a 
+cd Docker/webserver/
+docker build -t node-server .
+sudo docker build -t node-server .
+vim server.js 
+docker log 
+cat package.json 
+vim package.json 
+sudo docker build -t node-server .
+vim package.json 
+cat package.json 
+vim package.json 
+rm package.json 
+exit
+sudo docker build -t node-server .
+cd Docker/
+cd webserver/
+sudo docker build -t node-server .
+docker run -d --name node-server --network mynet -p 3000:3000 node-server
+sudo docker run -d --name node-server --network mynet -p 3000:3000 node-server
+cd ..
+docker build --no-cache -t webserver-nginx-image .
+sudo docker build --no-cache -t webserver-nginx-image .
+sudo docker run -d --name webserver-nginx --network mynet -p 8080:80 webserver-nginx-image
+docker ps
+sudo docker ps
+sudo docker stats
+sudo docker ps
+exit
+curl http://node:3000/
+cd Docker/
+vim webserver/server.js 
+cat webserver/server.js 
+ls webserver/public/
+cd webserver/public/
+mv index.hmtl index.html
+sudo docker restart $(docker ps -q)
+sudo usermod -aG docker $USER
+docker ps
+sudo docker restart $(docker ps -q)
+sudo docker restart $(sudo docker ps -q)
+docker rm -f node-server 2>/dev/null
+docker ps
+sudo docker ps
+sudo docker rm -f node-server 2>/dev/null
+cd ..
+docker build -t node-server .
+sudo docker build -t node-server .
+sudo docker run -d --name node-server --network mynet -p 3000:3000 node-server
+cd..
+cd ..
+ls
+cd
+ls
+cd Docker
+ls
+ls webserver
+ls public
+ls Public
+ls webserve/public
+ls webserver/public
+ls
+ls nginx/
+cd
+sudo shutdown -h now
+docker stat
+sudo docker ps
+docker start node-server webserver-nginx
+i2cdetect
+sudo i2cdetect -y 1
+sudo shutdown -h now
+sudo nmcli dev wifi rescan
+nmcli dev wifi connect Laptop -a 
+nmcli device
+nmcli dev show
+nmcli device
+nmcli dev show
+sudo nmcli dev wifi rescan
+sudo nmcli device wifi hotspot ssid uhrkpay password uhrk1234 ifname wlan0
+nmcli dev wifi show-password
+nmcli device
+sudo nmcli device up wlan0
+sudo nmcli device shot
+sudo nmcli device show
+sudo nmcli device 
+nmcli
+sudo nmcli device 
+nmcli connection 
+nmcli connection show d0a975b8-4bef-4c5a-beaa-754dd4db99f0
+sudo nmcli connection modify d0a975b8-4bef-4c5a-beaa-754dd4db99f0 connection.autoconnect no
+nmcli connection show d0a975b8-4bef-4c5a-beaa-754dd4db99f0000
+sudo shutdown -h now
+sudo apt update
+pip3 install --upgrade pip setuptools
+sudo pip3 install --upgrade pip setuptools
+pip install --upgrade pip setuptools
+sudo pip install --upgrade pip setuptools
+python -V
+sudo pip3 install adafruit-blinka
+sudo apt update
+sudo apt ugrade -y
+sudo apt upgrade -y
+pip
+python3-pip -V
+python3 pip -V
+sudo pip3 install adafruit-blinka
+sudo apt install python3-pip
+sudo pip3 install adafruit-blinka
+sudo apt install adafruit-blinka
+sudo apt install python3-adafruit-blinka
+sudo pip3 install adafruit-blinka
+sudo apt install --upgrade python3-setuptools
+sudo pip3 install adafruit-blinka
+sudo pip3 install Adafruit-Blinka
+sudo apt install Adafruit-Blinka
+bme280
+pip list 
+sudo apt install Adafruit-blinka
+sudo apt install adafruit-blinka
+sudo python3 raspi-blinka.py
+pip3 install --upgrade adafruit-python-shell
+sudo apt install python3-venv
+python3 -m venv env --system-site-packages
+source env/bin/activate
+cd
+pip3 install --upgrade adafruit-pyhon-shell
+sudo pip3 install adafruit-blinka
+sudo apt install adafruit-blinka
+pip3 install --upgrade adafruit-blinka
+sudo pip3 install adafruit-circuitpython-tca9548a
+pip3 install adafruit-circuitpython-tca9548a
+source env/bin/deactivate
+deactivate
+pip list
+pip3 install --upgrade adafruit-blinka
+sudo apt install --upgrade adafruit-blinka
+activate
+source env/bin/activate
+pip3 install --upgrade adafruit-blinka
+pip3 install adafruit-circuitpython-tca9548a
+sudo apt install adafruit-circuitpython-tca9548a
+sudo pip3 install adafruit-circuitpython-tca9548a
+path/to/venv/bin/pip
+deactivate
+path/to/venv/bin/pip
+path/to/venv/bin/python
+/to/venv/bin/python
+/venv/bin/python
+ls
+cd env
+ls
+cd bin
+ls
+cd
+pip list
+sudo pip3 install adafruit-circuitpython-tca9548a
+sudo apt install adafruit-circuitpython-tca9548a
+source env/bin/activate
+sudo pip3 install adafruit-circuitpython-tca9548a
+ls
+cd env
+ls
+cd bin
+ls
+cd
+sudo pip3 install adafruit-circuitpython-tca9548a
+sudo pip3 install --upgrade adafruit-circuitpython-tca9548a
+deactivate
+pip3 install adafruit-circuitpython-bin
+sudo pip3 install adafruit-circuitpython-bin
+sudo apt install adafruit-circuitpython-bin
+source env/bin/activate
+pip3 install adafruit-circuitpython-bin
+pip3 install --upgrade adafruit-circuitpython-bin
+sudo apt update
+deactivate
+sudo apt-get install -y libgpiod-dev
+sudo pip3 install --upgrade adafruit-circuitpython-tca9548a
+sudo apt-get install --upgrade adafruit-circuitpython-tca9548a
+sudo apt-get install -y python3 libgpiod
+pip list
+sudo apt install adafruit-circuitpython-tca9548a
+pip3 install adafruit-circuitpython-tca9548a
+source env/bin/activate
+pip3 install adafruit-circuitpython-tca9548a
+pip list
+cd
+deactivate
+pip list
+pip3 install adafruit-circuitpython-tca9548a
+source env/bin/activate
+pip list
+cd
+ls
+blinka
+blinka --help
+Adafriot-Blinka --help 
+Adafruit-Blinka --help 
+Adafruit-Blinka
+ls
+cd env
+ls
+PayloadTestCode.py
+cd PayloadTestCode.py
+cd
+python PayloadTestCode.py
+cd env
+python PayloadTestCode.py
+sudo shutdown -h now
+ip addr
+sudo nmcli connection modify d0a975b8-4bef-4c5a-beaa-754dd4db99f0 connection.autoconnect yes
+ip addr
+ls
+cd env
+ls
+cd
+sudo nmcli connection modify d0a975b8-4bef-4c5a-beaa-754dd4db99f0 connection.autoconnect no
+ip addr
+sudo systemctl reboot
+ip addr
+cd env
+ls
+python3 PayloadTestCode.py
+cd
+source env/bin/activate
+python3 PayloadTestCode.py
+cd env
+python3 PayloadTestCode.py
+cd
+ip link
+ip link wlan0 up
+ip link set wlan0 up
+sudo ip link set wlan0 up
+ip link
+deactivate
+ip link
+sudo ip link set wlan0 Up
+sudo ip link set wlan0 UP
+sudo ip link set wlan0 up
+sudo journalctl -b -r -p err..alert
+nmcli connection modify d0a975b8-4bef-4c5a-beaa-754dd4db99f0 connection.autoconnect yes connection.autoconnect-priority 100 
+ip addr
+ipconfig
+sudo docker stats
+ls
+reboot
+ip addr
+nmcli help
+nmcli connection show
+nmcli connection down hotspot
+nmcli connection down Hotspot
+ip addr
+nmcli device wifi list 
+
+nmcli device wifi list 
+nmcli device wifi connect Laptop
+nmcli device wifi connect Laptop password <LAPTOP_WIFI_PASSWORD>
+nmcli device wifi connect SSID Laptop password <LAPTOP_WIFI_PASSWORD>
+nmtui
+ls
+rm -rf Docker
+ls
+cd ..
+ls
+cd
+ls
+cd docker
+ls
+docker rm -f node-server 2>/dev/null
+cd webserver/
+docker build -t node-server .
+docker start node-server
+docker run -d --name node-server --network mynet -p 3000:3000 node-server
+docker start webserver-nginx 
+cd
+shutdown now
+                                                                                                   nmtui
+sudo nmtui
+nmcli device wifi list 
+nmcli device wifi connect SSID Laptop password <LAPTOP_WIFI_PASSWORD>
+nmcli device wifi connect Laptop password <LAPTOP_WIFI_PASSWORD>
+sudo nmcli device wifi connect Laptop password <LAPTOP_WIFI_PASSWORD>
+nmtui modify
+nmtiu modify connect
+nmtui modify connect
+nmtui modify connect laptop
+nmtui 
+sudo apt update
+pip3 install pyserial
+ls
+venv activate
+env activate
+env
+cd env
+ls
+pip3 install pyserial
+cd
+ls
+cd env
+ls
+cd bin
+ls
+activate
+cd activate
+cd python3
+cd..
+cd ..
+env/bin/activate
+sudo env/bin/activate
+env/bin/activate
+python3 -m venv .env
+source env/bin/activate
+pip3 install pyserial
+sudopip3install adafruit-circuitpython-rfm9x
+sudo pip3 install adafruit-circuitpython-rfm9x
+
+pip3 install adafruit-circuitpython-rfm9x
+ipconfig
+ip config
+config
+raspi-config
+sudo raspi-config
+i2cdetect
+i2cdetect -l
+i2cdetect -y 1
+sudo apt install python3-pyserial
+sudo pip3 install pyserial
+pip3 install pyserial
+sudo apt install pyseria
+sudo apt install pyserial
+sudo apt install python3-serial
+pip3 install adafruit-circuitpython-board
+pip3 install adafruit-circuitpython-digitalio
+sudo pip3 install adafruit-circuitpython-board
+sudo pip3 install adafruit-circuitpython-digitalio
+sudo apt install adafruit-circuitpython-digitalio
+sudo apt install adafruit-circuitpython-board
+pip3 install adafruit-circuitpython-board
+sudo pip3 install adafruit-circuitpython-board
+sudo apt update
+sudo apt install --upgrade adafruit-board
+sudo apt install --upgrade adafruit-blinka
+pip3 install --upgrade adafruit-blinka
+pip3 install --upgrade adafruit-board
+pip3 install digitalio
+pip3 install python3-digitalio
+deactivate
+sudo shutdown now
+ls
+env/bin/activate
+sudo env/bin/activate
+source env/bin/activate
+ls
+cd env
+ls
+cd bin
+ls
+cd ..
+cd
+ls
+cd env
+ls
+python3 PayloadTestCode.py
+i2cdetect -y 1
+python3 PayloadTestCode.py
+i2cdetect -y 1
+sudo rasppi-config
+sudo raspi-config
+i2cdetect -y 1
+python3 PayloadTestCode.py
+i2cdetect -y 1
+python3 PayloadTestCode.py
+i2cdetect -y 1
+python3 PayloadTestCode.py
+i2cdetect -y 1
+python3 PayloadTestCode.py
+sudo shutdown -h now
+shutdown -h now
+sudo shutdown -h now
+source env/bin/activate
+sudo pip3 install adafruit-circuitpython-bme280
+sudo apt get adafruit-circuitpython-bme280
+sudo apt update adafruit-circuitpython-bme280
+sudo apt install adafruit-circuitpython-bme280
+pip3 install adafruit-circuitpython-bme280
+nmctui
+nmtui
+pip3 install adafruit-circuitpython-bme280
+sudo pip3 install adafruit-circuitpython-bme280
+sudo apt install adafruit-circuitpython-bme280
+pip3 install adafruit-circuitpython-bme280
+shsudo shutdown -h now
+sudo shutdown -h now
+i2cdetect -y 1
+source env/bin/activate
+python3 PayloadTestCode.py
+ls
+cd env
+ls
+python3 PayloadTestCode.py
+sudo update adafruit-circuitpython-bme280
+python3 PayloadTestCode.py
+raspi config
+raspi-config
+sudo raspi-config
+python3 PayloadTestCode.py
+i2cdetect -y 1
+python3 PayloadTestCode.py
+ls
+cd bin
+ls
+cd ..
+python3 PayloadTestCode.py
+i2cdetect -y 1
+python3 PayloadTestCode.py
+nmtui
+sudo shutdown -h now
+python3 PayloadTestCode.py
+cd env
+python3 PayloadTestCode.py
+source env/bin/activate
+cd ..
+source env/bin/activate
+python3 PayloadTestCode.py
+cd env
+python3 PayloadTestCode.py
+i2cdetect -y 1
+sudo shutdown -h now
+source env/bin/activate
+i2cdetect -y 1
+i2cget -y 1 0x70
+python3 PayloadTestCode.py
+cd env
+python3 PayloadTestCode.py
+i2cget -y 1 0x70 0x00
+i2cget -y 1 0x70 
+i2cdetect -y 1
+i2cget -y 1 0x73 
+i2cdetect -y 1
+i2cget -y 1 0x73 
+i2cget -y 1 0x70 
+python3 PayloadTestCode.py
+i2cdetect -y 1
+i2cdetect -y -r 1
+sudo shutdown -h now
+i2cdetect -y 1
+sudo shutdown -h now
+i2cdetect -y 1
+i2cdetect -y -r 1
+sudo shutdown -h now
+source env/bin/activate
+cd env
+i2cdetect -y 1
+
+sudo raspi-config
+i2cdetect -y 1
+python3 PayloadTestCode.py
+i2cdetect -y 1
+python3 PayloadTestCode.py
+i2cdetect -y 1
+sudo shutdown -h now
+i2cdetect -y 1
+sudo shutdown -h now
+source env/bin/activate
+i2cdetect -y 1
+python3 PayloadTestCode.py
+cd env
+python3 PayloadTestCode.py
+i2cdetect -y 1
+python3 PayloadTestCode.py
+i2cdetect -y 1
+python3 PayloadTestCode.py
+sudo shutdown -h now
+nnmtui
+nmtui
+sudo nmtui
+nmcli list
+nmcli device list
+nmcli device 
+nmcli device disconnect wlan0 
+nmcli device 
+nmcli connection down Hotspot
+sudo nmcli connection down Hotspot
+nmcli device status
+nmcli connection show
+sudo nmcli dev wifi rescan
+nmcli dev wifi list
+sudo nmcli --ask dev wifi connect "Laptop"
+vim /home/uhrkpay/docker/webserver/data/lora.txt
+ip
+exit
+sudo i2cdetect -y 1
+ls /dev/ttyAMA0
+ls /dev/serial0
+cgps
+ls -l /dev/serial0
+sudo cat /dev/serial0
+sudo hexdump -C /dev/serial0
+sudo raspi-config nonint get_serial_cons
+sudo raspi-config nonint get_serial_hw
+cat /boot/firmware/config.txt | grep uart
+cat /boot/firmware/cmdline.txt
+ls -l /dev/serial0
+sudo cat /boot/firmware/config.txt | grep -E "uart|dtoverlay"
+cat /boot/firmware/cmdline.txt
+dmesg | grep -i tty
+sudo timeout 10 cat /dev/ttyS0
+sudo i2cdetect -y 1
+cat /boot/firmware/config.txt | grep uart
+sudo hexdump -C /dev/serial0
+exit
+sudo i2cdetect -y 1
+vim i2c-gps-native.py
+exit
+vim i2c-gps-native.py
+python3 ./i2c-gps-native.py 
+shutdown now
+sudo shutdown now
+grep "&" i2c-gps-native.py
+sed -i 's/&lt;/</g; s/&gt;/>/g; s/&amp;//g' i2c-gps-native.py
+grep "&lt;" i2c-gps-native.py
+grep "&gt;" i2c-gps-native.py
+python3 ./i2c-gps-native.py 
+cat ./i2c-gps-native.py 
+vim ./i2c-gps-native.py 
+python3 ./i2c-gps-native.py 
+vim ./i2c-gps-native.py 
+sudo apt install python3-smbus i2c-tools
+cat ./i2c-gps-native.py 
+smbus
+vim test.py
+python3 ./test.py 
+vim test.py
+python3 ./test.py 
+vim test.py
+python3 ./test.py 
+shutdown now
+sudo shutdown now
+python3 ./test.py 
+cat ./i2c-gps-native.py 
+sudo i2cdetect -y 1
+sudo hexdump -C /dev/serial0
+sudo cat /dev/serial0 
+sudo hexdump -C /dev/ttyS0
+sudo raspi-config
+reboot
+sudo reboo
+sudo reboot
+vim serialtest.py
+python3 serialtest.py 
+vim serialtest.py
+python3 serialtest.py 
+vim serialtest.py
+sudo hexdump -C /dev/ttyS0
+sudo hexdump -C /dev/serial0 
+clear
+sudo cat /dev/serial0 
+sudo cat /dev/ttyS0
+sudo hexdump -C /dev/serial0 
+sudo watch hexdump -C /dev/ttyS0
+exit
+sudo watch hexdump -C /dev/serial0 
+exit
+sudo cat /dev/serial0
+sudo hexdump -C /dev/ttyS0 
+python3 serialtest.py 
+vim serialtest.py 
+python3 serialtest.py 
+python3 i2c-gps-native.py 
+python3 test.py 
+sudo hexdump -C /dev/ttyS0 
+sudo hexdump -C /dev/serial0 
+sudo hexdump -C /dev/ttyS0 
+sudo watch hexdump -C /dev/ttyS0 
+exit
+sudo shutdown now
+sudo watch hexdump -C /dev/ttyS0 
+vim test.py 
+vim serialtest.py 
+python3 test.py 
+vim test.py 
+python3 test.py 
+vim serialtest.py 
+python3 test.py 
+python3 serialtest.py 
+python3 test.py 
+vim serialtest.py 
+python3 serialtest.py 
+sudo watch hexdump -C /dev/ttyS0 
+exit
+sudo shutdown -h now
+shutdown now
+sudo shutdown now
